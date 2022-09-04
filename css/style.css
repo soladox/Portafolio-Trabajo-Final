@@ -2,3 +2,12 @@
 .nav-link {
     color: white;
 }
+
+.carousel-inner > .carousel-item > img {
+    width: 100% !important;
+  height: 50%;
+  }
+
+.rounded {
+    border-radius: 5% !important;
+}
