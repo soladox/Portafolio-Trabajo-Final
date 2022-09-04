@@ -11,3 +11,8 @@
 .rounded {
     border-radius: 5% !important;
 }
+
+body {
+    background-color: saddlebrown; 
+    /* ToDo: Cambiar color */
+}
