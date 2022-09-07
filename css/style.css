@@ -1,4 +1,11 @@
 
 .nav-link {
-    color: white;
+    color: rgb(255, 255, 255);
 }
+body { background-color: rgb(241, 188, 119);}
+
+#K { color:rgb(255, 255, 255)}  
+
+#K { background-color: black;
+   width: min-content; 
+    contain:layout-center;}
