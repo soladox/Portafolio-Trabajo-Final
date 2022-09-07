@@ -1,4 +1,3 @@
 # Portafolio-Trabajo-Final
 Trabajo final de Diplomado FrontEnd
-
-Enlace github pages: https://soladox.github.io/Portafolio-Trabajo-Final/
+El proyecto trata de un portafolios de ámbito profesional/personal, la finalidad del mismo es crear una pagina para poder contactar a Kevin jara o Sebastián cerda para poder solicitarlos en sus servicios según los intereses personales de alguna entidad o empresa que quiera contactarles.
