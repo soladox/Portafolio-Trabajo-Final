@@ -1,11 +1,29 @@
 
 .nav-link {
-    color: rgb(255, 255, 255);
+    color: white;
 }
-body { background-color: rgb(241, 188, 119);}
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
 
-#K { color:rgb(255, 255, 255)}  
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-#K { background-color: black;
-   width: min-content; 
-    contain:layout-center;}
+.contenedor-imagen {
+	height: 100vh;
+}
+
+.contenedor-imagen img {
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	object-fit: cover;
+	object-position: 0 bottom;
+}
