@@ -43,22 +43,45 @@
             <div class="mb-3">
                 <h1>Contactanos:</h1>
             </div>
-            <div class="row mb-1">
+            <div class="col-row mb-1">
                     <label class="col-auto col-form-label mb-3">Nombre</label>
-                    <input type="text" name="" id="" class="col-form-control">
+                    <input type="text" name="" id="nombre" class="col-form-control">
                 </div>
-            <div class="row mb-1">
-                    <label class="col-form-label mb-3 col-auto">Apellidos</label>
-                    <input type="text" name="" id="" class="col-auto col-form-control">
+            <div class="col-row mb-1">
+                    <label class="col-form-label mb-3 col-auto">Correo</label>
+                    <input type="text" name="" id="correo" class="col-auto col-form-control">
                 </div>
             
-            <div class="col-row">
-                <label for="">Contactar a</label>
-                <select name="" id="">
-                    <option value="">Sebastian</option>
-                    <option value="">Kevin</option>
+            <div class="col-row mb-3">
+                <label for="">Enviar solicitud a</label>
+                <select name="" id="selectId">
+                    <option value="seba">Sebastian</option>
+                    <option value="kevin">Kevin</option>
                 </select>
             </div>
+            
+            <div class="col-row mb-3">
+              <label class="mb-3" for="">Me gustan los completos con</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Mayonesa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Ketchup
+                </label>
+              </div>
+          </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Vender mi informacion personal
+              </label>
+            </div>
+            <button type="submit" id="btn-submit" class="btn btn-primary">Enviar</button>
         </div>
     </main>
 </div>
