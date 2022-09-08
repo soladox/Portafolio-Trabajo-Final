@@ -20,10 +20,11 @@
 	vertical-align: top;
 	object-fit: cover;
 	object-position: 0 bottom;
-  
+}
+
 .carousel-inner > .carousel-item > img {
     width: 100% !important;
-  height: 50%;
+ height: 50%;
   }
 
 .rounded {
