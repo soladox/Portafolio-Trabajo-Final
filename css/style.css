@@ -43,3 +43,12 @@ h2{
 label{
     color: wheat;
 }
+
+#imgPerfil{
+	min-width: 100px;
+	min-height: 100px;
+}
+
+#btn-contact{
+	background-color: black !important;
+}
