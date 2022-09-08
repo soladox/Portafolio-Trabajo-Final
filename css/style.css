@@ -1,25 +1,59 @@
 
-.nav-link {
-    color: white;
+.navbar { background-color: rgb(9, 8, 119) !important;
+
 }
-.contenedor {
-	max-width: 1000px;
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+.contenedor { background-color: rgb(9, 8, 119);
+	border-radius: 2%;
+	padding: 20px;
 	width: 90%;
 	margin: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
 }
 
-.contenedor-imagen {
-	height: 100vh;
+.contenedorh2{ 
+	padding: 20px;
+	width: 30%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+ 
+.contenedorimg {
+	padding: 20px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+ }
+ 
+.titulo { margin: 5px;
+	padding: auto;
+	width: auto;
+	color: rgb(255, 255, 255);
+	background-size: auto;
+	background-color: rgb(9, 8, 119);
+	font-size: auto;
+	font-family: 'Signika', sans-serif; 
+	text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
-.contenedor-imagen img {
-	width: 100%;
-	height: 100%;
-	vertical-align: top;
-	object-fit: cover;
-	object-position: 0 bottom;
+.titulo2{ color: white; text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+.texto{ color: rgb(255, 255, 255); text-shadow: 1px 1px rgb(0, 0, 0)
+}
+
+.img { background-color: rgb(9, 8, 119);
+	padding: 10px;
+	max-width: fit-content;
+	min-width: fit-content;
+	margin: auto;
+	display: flex;
+	justify-content: center;	
 }
 
 .carousel-inner > .carousel-item > img {
@@ -32,14 +66,14 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 h1{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 h2{
-    color: wheat
+    color: rgb(0, 0, 0)
 }
 label{
-    color: wheat;
+    color: rgb(0, 0, 0);
 }
