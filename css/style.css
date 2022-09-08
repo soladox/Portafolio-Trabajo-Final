@@ -15,24 +15,35 @@
 	justify-content: left;
 }
 
+
+@media only screen and (max-width: 600px){
+	.contenedorh2{ 
+		padding: 20px;
+		min-width: 250px;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	}
+}
+
 .contenedorh2{ 
 	padding: 20px;
-	width: 30%; 
 	margin: auto;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
- 
 .contenedorimg {
 	padding: 20px;
 	width: 90%;
 	margin: auto;
 	display: flex;
 	justify-content: center;
- }
+}
+
  
 .titulo { margin: 5px;
-	padding: auto;
+	padding: 5px;
 	width: auto;
 	color: rgb(255, 255, 255);
 	background-size: auto;
@@ -86,4 +97,30 @@ label{
 
 #btn-contact{
 	background-color: black !important;
+}
+
+.imgSeba{
+	border: 5px groove rgb(9, 8, 119);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rgb(9, 8, 119);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgb(9, 8, 119);
 }

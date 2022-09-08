@@ -1,49 +1,36 @@
 window.addEventListener('DOMContentLoaded', (e) => {
-    // con el evento DOMContentLoaded me aseguró que todas las etiquetas HTML 
-    // fueron cargadas y procesadas por el browser 
-    // más info en: https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
-    console.log("evento DOMContentLoaded");
 
-    // Sintaxis de variables:
-    // let nombreVariable = valor;
-    // más ejemplos
-    //let nombre = "Santiago";
-    //let edad   = 34; 
-
-    let boton = document.getElementById("btn-contact");
-    boton.addEventListener("click", (ev) => {
+let boton = document.getElementById("btn-contact");
+    boton.addEventListener("click", async (e) => {
+        e.preventDefault();
         try {
-            // recuperar los valores del formulario 
             let nombre  = document.getElementById("nombre").value;
             let email   = document.getElementById("correo").value;
             let checkbox = document.querySelector(".flex").value;
             let select = document.getElementById("selectId").value;
             if( nombre.length < 5 ) {
-                throw new Error("El nombre es demasiado corto!!!");
+                throw new Error("El nombre es demasiado corto!");
             }
             let completo  = getCompleto(); 
-            let contact = { // JSON =  JavaScript object notation 
-                // clave: valor
-                nombre_completo: nombre,  //nombre,
-                email, // email: email,
+            let contact = { 
+                nombre_completo: nombre,
+                email,
                 completo,
                 contactar: select,
                 venderInfo: checkbox,
                 fecha_registro: (new Date()).toISOString() 
             };        
-            console.dir(contact);
             guardarContacto( contact );
-            mostrarExito("Se guardó correctamente su subscripción!!!");
-        } catch(err) { 
-            mostrarError(err.message); 
+        } catch(e) { 
+            mostrarError(e.message); 
         }
+        return false;
     });    
 });
 function mostrarExito(mensaje) {
-    // aparezca cuadro verder y
-    // se muestre el mensaje 
-    alert(mensaje);
-    // TODO: hacer que el mensaje se muestre en el cuadro verde 
+    const idExito = "form-suscripcion-exito";
+    displayMensajeExito(true);
+    mostrarMensaje(idExito, mensaje);
 }
 
 async function guardarContacto( contact ) {
@@ -54,25 +41,48 @@ async function guardarContacto( contact ) {
         body:   JSON.stringify(contact) 
     });
     const data = await respuesta.json();
-    mostrarExito("Se guardó correctamente su subscripción con ID: "+data.name); 
+    mostrarExito("Solicitud enviada!"); 
 }
 
 
 function getCompleto() {
     let inputSeleccionado = document.querySelector("input[name='completo']:checked");
     if ( inputSeleccionado == null ) {
-        throw new Error("Debe seleccionar un género!!!");
+        throw new Error("Debe seleccionar un condimento!");
     }
     const completo = inputSeleccionado.value;
     return completo;
 }
 
-function mostrarError(mensajeDeError) {
-    // valor anterior "none"    
-    document.getElementById("form-mensaje-error").style.display = "block";
-    const ul = document.querySelector("#form-mensaje-error ul");
-    const li = document.createElement("li");
-    const liText = document.createTextNode(mensajeDeError);
-    li.appendChild(liText); 
-    ul.appendChild(li); 
+function mostrarError(mensaje) {
+    const idError = "form-contacto-error";
+    displayMensajeExito(false);
+    mostrarMensaje(idError, mensaje); 
+}
+
+function mostrarExito(mensaje) {
+    const idExito = "form-contacto-exito";
+    displayMensajeExito(true);
+    mostrarMensaje(idExito, mensaje);
+}
+
+function mostrarMensaje(idContenedor, mensaje) {
+    const ul = document.querySelector(`#${idContenedor} ul`);
+    const li = document.createElement("li")
+    const liContent = document.createTextNode( mensaje )
+    li.appendChild( liContent )
+    ul.appendChild(li);
+}
+
+function displayMensajeExito(b) {
+    const idExito = "form-contacto-exito";
+    const idError = "form-contacto-error";
+    
+    if( b ) {        
+        document.getElementById(idExito).style.display = "block";
+        document.getElementById(idError).style.display = "none";
+    } else {
+        document.getElementById(idExito).style.display = "none";
+        document.getElementById(idError).style.display = "block";
+    }
 }
