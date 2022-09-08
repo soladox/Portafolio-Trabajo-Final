@@ -20,4 +20,25 @@
 	vertical-align: top;
 	object-fit: cover;
 	object-position: 0 bottom;
+  
+.carousel-inner > .carousel-item > img {
+    width: 100% !important;
+  height: 50%;
+  }
+
+.rounded {
+    border-radius: 5% !important;
+}
+
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+h2{
+    color: wheat
+}
+label{
+    color: wheat;
 }
