@@ -11,3 +11,13 @@
 .rounded {
     border-radius: 5% !important;
 }
+
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+h2{
+    color: wheat
+}

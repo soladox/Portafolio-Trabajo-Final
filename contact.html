@@ -7,6 +7,7 @@
     <title>S & K</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptForm.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
@@ -43,18 +44,19 @@
             <div class="mb-3">
                 <h1>Contactanos:</h1>
             </div>
+            <form action="" method="post">
             <div class="col-row mb-1">
                     <label class="col-auto col-form-label mb-3">Nombre</label>
-                    <input type="text" name="" id="nombre" class="col-form-control">
+                    <input type="text" id="nombre" name="nombre" class="col-form-control">
                 </div>
             <div class="col-row mb-1">
                     <label class="col-form-label mb-3 col-auto">Correo</label>
-                    <input type="text" name="" id="correo" class="col-auto col-form-control">
+                    <input type="text" name="correo" id="correo" class="col-auto col-form-control">
                 </div>
             
             <div class="col-row mb-3">
                 <label for="">Enviar solicitud a</label>
-                <select name="" id="selectId">
+                <select id="selectId" name="selectId">
                     <option value="seba">Sebastian</option>
                     <option value="kevin">Kevin</option>
                 </select>
@@ -63,25 +65,26 @@
             <div class="col-row mb-3">
               <label class="mb-3" for="">Me gustan los completos con</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
+                <input class="form-check-input" type="radio" name="completo" id="mayo" value="mayo" checked>
+                <label class="form-check-label" for="mayo">
                   Mayonesa
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                <input class="form-check-input" type="radio" name="completo" id="ketchup" value="ketchup">
+                <label class="form-check-label" for="ketchup">
                   Ketchup
                 </label>
               </div>
           </div>
             <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
+              <input class="form-check-input flex" type="checkbox" value="si" id="flexVender" name="flexVender" checked>
+              <label class="form-check-label" for="flexVender">
                 Vender mi informacion personal
               </label>
             </div>
             <button type="submit" id="btn-submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
     </main>
 </div>
