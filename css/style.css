@@ -5,6 +5,7 @@
 .nav-link {
     color: rgb(255, 255, 255);
 }
+
 .contenedor { background-color: rgb(9, 8, 119);
 	border-radius: 2%;
 	padding: 20px;
@@ -16,7 +17,7 @@
 
 .contenedorh2{ 
 	padding: 20px;
-	width: 30%;
+	width: 30%; 
 	margin: auto;
 	display: flex;
 	justify-content: center;
