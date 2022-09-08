@@ -78,3 +78,12 @@ h2{
 label{
     color: rgb(0, 0, 0);
 }
+
+#imgPerfil{
+	min-width: 100px;
+	min-height: 100px;
+}
+
+#btn-contact{
+	background-color: black !important;
+}
