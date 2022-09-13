@@ -124,3 +124,10 @@ label{
   font-size: 55px;
   color: rgb(9, 8, 119);
 }
+
+.footer-content{
+	width: 100%;
+    height: 100%;
+    background-image: url(../resources/footer.png);
+    background-size: 100% 100%;
+}
