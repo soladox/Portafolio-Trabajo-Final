@@ -6,6 +6,7 @@ El proyecto trata de un portafolios de ámbito profesional/personal, la finalida
 
 ## Requerimientos
 
+Browser compatible con html5 y CSS3
 
 ## Recursos utilizados
 Bootstrap 5.2.
