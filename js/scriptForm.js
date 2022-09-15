@@ -6,7 +6,7 @@ let boton = document.getElementById("btn-contact");
         try {
             let nombre  = document.getElementById("nombre").value;
             let email   = document.getElementById("correo").value;
-            let checkbox = document.querySelector(".flex").value;
+            let checkbox = document.querySelector(".flex").checked;
             let select = document.getElementById("selectId").value;
             if( nombre.length < 5 ) {
                 throw new Error("El nombre es demasiado corto!");
