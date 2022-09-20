@@ -7,7 +7,7 @@
     <title>S & K</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scriptForm.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
   <div id="page-container">
@@ -81,8 +81,8 @@
               <input type="email" id="correo" name="correo" />
             </div>
             <div class="row mb-1">
-                <label for="contraseña">Contraseña</label>
-                <input type="password" id="contraseña" name="contraseña" />
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" />
               </div>
               <div class="row mb-1">
                 <label for="confir">Confirmar Contraseña</label>
@@ -91,20 +91,11 @@
           <div class="row mb-3">
             <label class="mb-3">Como desea ser tratado</label>
             <div class="form-check">
-              <input type="radio" id="el" name="el" value="el" checked/>
+              <input type="radio" id="el" name="pronombre" value="el" checked/>
               <label for="el">El y Sr.</label>
-              <input type="radio" id="ella" name="ella" value="ella" />
+              <input type="radio" id="ella" name="pronombre" value="ella" />
               <label for="ella">Ella y Sra.</label>
             </div>
-          </div>
-          <div class="row mb-3">
-            
-            <label class="form-check-label" for="flexVender">
-              Vender mi informacion personal
-            </label>
-          </div>
-          <div class="row mb-3 justify-content-center">
-          <input class="flex form-check-input" type="checkbox" value="si" id="flexVender" name="flexVender" checked>
           </div>
               <button id="btn-contact" class="btn btn-primary" type="button">Registrate</button>
           </form>
